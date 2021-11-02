@@ -30,10 +30,10 @@ cc_library {
 }
 
 cc_binary {
-    name: "android.hardware.power@1.3-service.op6-libperfmgr",
+    name: "android.hardware.power@1.3-service.op6t-libperfmgr",
     relative_install_path: "hw",
-    vintf_fragments: ["hidl/android.hardware.power@1.3-service.op6.xml"],
-    init_rc: ["hidl/android.hardware.power@1.3-service.op6-libperfmgr.rc"],
+    vintf_fragments: ["hidl/android.hardware.power@1.3-service.op6t.xml"],
+    init_rc: ["hidl/android.hardware.power@1.3-service.op6t-libperfmgr.rc"],
     vendor: true,
     srcs: ["hidl/service.cpp", "hidl/Power.cpp"],
     cflags: [
@@ -56,10 +56,10 @@ cc_binary {
 }
 
 cc_binary {
-    name: "android.hardware.power-service.op6-libperfmgr",
+    name: "android.hardware.power-service.op6t-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.op6-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.op6.xml"],
+    init_rc: ["aidl/android.hardware.power-service.op6t-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.op6t.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-ndk_platform",
