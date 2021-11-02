@@ -57,10 +57,12 @@ TARGET_USE_QTI_BT_STACK := true
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(VENDOR_PATH):libfod_extension.oneplus_oneplus6t
-
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(VENDOR_PATH)/framework_manifest.xml
+SOONG_CONFIG_NAMESPACES += ONEPLUS_FOD
+SOONG_CONFIG_ONEPLUS_FOD := POS_X POS_Y SIZE
+SOONG_CONFIG_ONEPLUS_FOD_POS_X := 444
+SOONG_CONFIG_ONEPLUS_FOD_POS_Y := 1966
+SOONG_CONFIG_ONEPLUS_FOD_SIZE := 190
+TARGET_SURFACEFLINGER_FOD_LIB := //$(VENDOR_PATH):libfod_extension.oneplus
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 1
@@ -196,8 +198,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(VENDOR_PATH) \
-    hardware/google/pixel \
-    device/oneplus/common
+    hardware/google/pixel
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
