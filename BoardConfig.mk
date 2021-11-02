@@ -16,7 +16,7 @@
 
 BOARD_VENDOR := oneplus
 
-VENDOR_PATH := device/oneplus/oneplus6
+VENDOR_PATH := device/oneplus/oneplus6t
 ANDROID_TOP := $(shell pwd)
 
 # Compile libhwui in performance mode

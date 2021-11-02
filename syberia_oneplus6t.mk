@@ -20,17 +20,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from oneplus device
-$(call inherit-product, device/oneplus/oneplus6/device.mk)
+$(call inherit-product, device/oneplus/oneplus6t/device.mk)
 
 # Inherit some common Syberia stuff.
 $(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := syberia_oneplus6
+PRODUCT_NAME := syberia_oneplus6t
 PRODUCT_DEVICE := oneplus6
 PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := ONEPLUS A6000
+PRODUCT_MODEL := ONEPLUS A6016
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
@@ -45,5 +45,3 @@ BUILD_FINGERPRINT := OnePlus/OnePlus6/OnePlus6:11/RKQ1.201217.002/2108052223:use
 TARGET_VENDOR := OnePlus
 
 TARGET_BOOT_ANIMATION_RES := 2160
-
-SYBERIA_BUILD_TYPE := OFFICIAL

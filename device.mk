@@ -16,7 +16,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -27,7 +27,7 @@ $(call inherit-product, vendor/oneplus/oneplus6/oneplus6-vendor.mk)
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
-TARGET_OTA_ASSERT_DEVICE := oneplus6,OnePlus6,enchilada
+TARGET_OTA_ASSERT_DEVICE := oneplus6t,OnePlus6T,fajita
 
 # Component overrides
 PRODUCT_COPY_FILES += \

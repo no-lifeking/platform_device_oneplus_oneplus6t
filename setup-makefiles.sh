@@ -19,7 +19,7 @@
 set -e
 
 # Required!
-DEVICE=oneplus6
+DEVICE=oneplus6t
 VENDOR=oneplus
 DEVICE_COMMON=$DEVICE
 
@@ -42,7 +42,7 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$SYBERIA_ROOT" true
 
 # Copyright headers and guards
-write_headers "oneplus6"
+write_headers "oneplus6t"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true
