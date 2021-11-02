@@ -56,6 +56,12 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 TARGET_USE_QTI_BT_STACK := true
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
+# FOD
+TARGET_SURFACEFLINGER_FOD_LIB := //$(VENDOR_PATH):libfod_extension.oneplus_oneplus6t
+
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(VENDOR_PATH)/framework_manifest.xml
+
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 1
 BOARD_KERNEL_BASE := 0x00000000
@@ -190,7 +196,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(VENDOR_PATH) \
-    hardware/google/pixel
+    hardware/google/pixel \
+    device/oneplus/common
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
