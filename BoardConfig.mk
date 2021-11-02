@@ -76,12 +76,9 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 NEED_KERNEL_MODULE_SYSTEM := true
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 11
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/sdm845
-TARGET_KERNEL_CONFIG := syberia_defconfig
-KERNEL_TOOLCHAIN := $(ANDROID_TOP)/prebuilts/clang/host/linux-x86/clang-11/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-gnu-
+TARGET_KERNEL_CONFIG := enchilada_defconfig
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
