@@ -27,16 +27,16 @@ $(call inherit-product, vendor/syberia/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := syberia_oneplus6t
-PRODUCT_DEVICE := oneplus6
+PRODUCT_DEVICE := oneplus6t
 PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := ONEPLUS A6016
+PRODUCT_MODEL := ONEPLUS A6013
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=OnePlus6 \
-    PRODUCT_NAME=OnePlus6 \
+    PRODUCT_DEVICE=OnePlus6T \
+    PRODUCT_NAME=OnePlus6T \
     PRIVATE_BUILD_DESC="OnePlus6-user 11 RKQ1.201217.002 2108052223 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
